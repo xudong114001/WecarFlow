@@ -1,9 +1,8 @@
 name: Publish NPM Version Info
 
+# Dispatches to the upstream lyswhut/lx-music-mobile-version-info repo, which this fork does not own.
 on:
   workflow_dispatch:
-  release:
-    types: [published]
 
 jobs:
   dispatch:

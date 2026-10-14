@@ -100,7 +100,8 @@ def getNpmPackageJson() {
 def npmPackageJson = getNpmPackageJson()
 def verCode = npmPackageJson["versionCode"]
 def verName = npmPackageJson["version"]
-def applicationName = npmPackageJson["name"]
+// APK artifact prefix; kept out of package.json name so the npm lockfile stays in sync with upstream.
+def applicationName = "WecarFlow"
 
 android {
     ndkVersion rootProject.ext.ndkVersion

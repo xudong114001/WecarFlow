@@ -1,14 +1,17 @@
 name: Build
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   Android:
     name: Android
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out git repository
         uses: actions/checkout@v4
@@ -22,9 +25,8 @@ jobs:
         shell: bash
         run: |
           cd android
-          echo ${{ secrets.KEYSTORE_STORE_FILE_BASE64 }} | base64 --decode > app/${{ secrets.KEYSTORE_STORE_FILE }}
-          ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_FILE='${{ secrets.KEYSTORE_STORE_FILE }}' -PMYAPP_UPLOAD_KEY_ALIAS='${{ secrets.KEYSTORE_KEY_ALIAS }}' -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_KEY_PASSWORD }}'
-          rm -f app/${{ secrets.KEYSTORE_STORE_FILE }}
+          # Signed with the committed Android debug key; replace with a private keystore secret before wide distribution.
+          ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_FILE='debug.keystore' -PMYAPP_UPLOAD_KEY_ALIAS='androiddebugkey' -PMYAPP_UPLOAD_STORE_PASSWORD='android' -PMYAPP_UPLOAD_KEY_PASSWORD='android'
 
       # Push tag to GitHub if package.json version's tag is not tagged
       - name: Get package version
@@ -150,6 +152,8 @@ jobs:
     runs-on: ubuntu-latest
     # needs: [Android, Android_SL]
     needs: [Android]
+    permissions:
+      contents: write
     steps:
       - name: Check out git repository
         uses: actions/checkout@v4
@@ -166,7 +170,6 @@ jobs:
           cd artifacts
           md5sum *.apk >> ../publish/changeLog.md
           echo -e '```\n' >> ../publish/changeLog.md
-          echo -e '\n[软件安装包说明](https://lyswhut.github.io/lx-music-doc/download#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8C%85%E8%AF%B4%E6%98%8E)\n' >> ../publish/changeLog.md
 
       - name: Get package version
         run: |
@@ -181,11 +184,11 @@ jobs:
           draft: false
           tag_name: v${{ env.PACKAGE_VERSION }}
           files: |
-            artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-arm64-v8a.apk
-            artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-armeabi-v7a.apk
-            artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-x86_64.apk
-            artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-x86.apk
-            artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-universal.apk
+            artifacts/WecarFlow-v${{ env.PACKAGE_VERSION }}-arm64-v8a.apk
+            artifacts/WecarFlow-v${{ env.PACKAGE_VERSION }}-armeabi-v7a.apk
+            artifacts/WecarFlow-v${{ env.PACKAGE_VERSION }}-x86_64.apk
+            artifacts/WecarFlow-v${{ env.PACKAGE_VERSION }}-x86.apk
+            artifacts/WecarFlow-v${{ env.PACKAGE_VERSION }}-universal.apk
 
           # artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-sl-arm64-v8a.apk
           # artifacts/lx-music-mobile-v${{ env.PACKAGE_VERSION }}-android_5-universal.apk
