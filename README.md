@@ -3,7 +3,7 @@
 <h1 align="center">爱趣听移动版</h1>
 
 <p align="center">
-  <a href="https://github.com/xudong114001/WecarFlow/releases"><img src="https://img.shields.io/github/release/lyswhut/lx-music-mobile" alt="Release version"></a>
+  <a href="https://github.com/xudong114001/WecarFlow/releases"><img src="https://img.shields.io/github/release/xudong114001/WecarFlow" alt="Release version"></a>
   <a href="https://github.com/xudong114001/WecarFlow/actions/workflows/release.yml"><img src="https://github.com/xudong114001/WecarFlow/workflows/Build/badge.svg" alt="Build status"></a>
   <a href="https://github.com/xudong114001/WecarFlow/actions/workflows/beta-pack.yml"><img src="https://github.com/xudong114001/WecarFlow/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
   <a href="https://github.com/facebook/react-native"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-mobile/react-native/master" alt="React native version"></a>
@@ -12,7 +12,7 @@
   <!-- <a href="https://github.com/xudong114001/WecarFlow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lyswhut/lx-music-mobile" alt="License"></a> -->
 </p>
 
-<p align="center">一个基于 React Native 开发的音乐软件</p>
+<p align="center">一个基于洛雪音乐开发的音乐软件</p>
 
 ## 说明
 
