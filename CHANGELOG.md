@@ -6,6 +6,13 @@ Project versioning adheres to [Semantic Versioning](http://semver.org/).
 Commit convention is based on [Conventional Commits](http://conventionalcommits.org).
 Change log format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.9.4](https://github.com/xudong114001/WecarFlow/compare/v1.9.3...v1.9.4) - 2026-10-14
+
+### 修复
+
+- 应用内「关于」页、许可协议、README/FAQ/Issue 模板中的地址仍指向上游仓库，现改为本仓库；分支名 master/dev 统一为 main
+- 应用内更新检查会读取上游 version.json 并按 lx-music-mobile-v*.apk 下载上游安装包，改为只查本仓库、按 WecarFlow-v*.apk 下载
+
 ## [1.9.3](https://github.com/xudong114001/WecarFlow/compare/v1.9.2...v1.9.3) - 2026-10-14
 
 ### 变更
