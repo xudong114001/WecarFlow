@@ -6,6 +6,16 @@ Project versioning adheres to [Semantic Versioning](http://semver.org/).
 Commit convention is based on [Conventional Commits](http://conventionalcommits.org).
 Change log format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.9.2](https://github.com/xudong114001/WecarFlow/compare/v1.9.1...v1.9.2) - 2026-10-14
+
+### 新增
+
+- 图标与品牌全面替换为「腾讯爱趣听」：桌面启动图标、Android 8.0+ 自适应图标、通知栏小图标、启动页
+
+### 修复
+
+- 发布工作流：触发分支由 master 改为 main，补齐创建 tag 与 Release 的权限，产物改名为 WecarFlow-*，gradlew 恢复可执行权限位
+
 ## [1.9.1](https://github.com/lyswhut/lx-music-mobile/compare/v1.9.0...v1.9.1) - 2026-09-19
 
 ### 优化

@@ -1,6 +1,12 @@
-### WecarFlow 首个发布版本
+### 改版内容
 
-基于 [lx-music-mobile](https://github.com/lyswhut/lx-music-mobile) 1.9.1 改造，包名 `com.tencent.wecarflow`，可与原版洛雪音乐共存安装。
+- 应用图标全面替换为新版音符图标：桌面启动图标、圆角/圆形遮罩、Android 8.0+ 自适应图标、通知栏小图标
+- 应用名与界面文案改为「腾讯爱趣听」，覆盖简体中文、繁体中文、英文三套语言，以及歌词占位文本、许可协议、启动提示
+- 发布工作流修复：改为在 `main` 分支触发、补齐打 tag 与创建 Release 所需权限、产物名改为 `WecarFlow-v1.9.2-*.apk`
+
+### 说明
+
+本版与上一版源码基线一致，功能层面无改动，仅品牌与图标变化。包名 `com.tencent.wecarflow` 独立，不影响其他音乐 App，可直接覆盖安装 v1.9.1。
 
 ### 安装包说明
 
