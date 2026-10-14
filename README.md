@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/lyswhut/lx-music-mobile"><img width="200" src="https://github.com/lyswhut/lx-music-mobile/blob/master/doc/images/icon.png" alt="lx-music logo"></a></p>
+<p align="center"><a href="https://github.com/lyswhut/lx-music-mobile"><img width="200" src="https://github.com/xudong114001/WecarFlow/blob/main/doc/images/icon.png" alt="lx-music logo"></a></p>
 
 <h1 align="center">腾讯爱趣听移动版</h1>
 
