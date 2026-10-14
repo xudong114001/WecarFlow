@@ -1,0 +1,4 @@
+<resources>
+    <!-- 与「黑灯瞎火」主题的 c-main-background 同色号，消除冷启动时原生窗口的白闪 -->
+    <color name="window_background">#FF131313</color>
+</resources>

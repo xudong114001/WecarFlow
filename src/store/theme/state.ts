@@ -251,15 +251,16 @@ const state: InitState = {
   shouldUseDarkColors: false,
   theme: {
     ...theme,
-    'c-app-background': theme['c-primary-light-600-alpha-600'],
-    'c-main-background': 'rgba(255, 255, 255, 0.9)',
+    isDark: true,
+    'c-app-background': 'rgba(0, 0, 0, 0)',
+    'c-main-background': 'rgba(19, 19, 19, 0.95)',
 
     'c-badge-primary': theme['c-primary'],
     'c-badge-secondary': '#4baed5',
     'c-badge-tertiary': '#e7aa36',
 
-    'c-font': theme['c-850'],
-    'c-font-label': theme['c-450'],
+    'c-font': 'rgb(219,219,219)',
+    'c-font-label': 'rgb(146,146,146)',
     'c-primary-font': theme['c-primary'],
     'c-primary-font-hover': theme['c-primary-alpha-300'],
     'c-primary-font-active': theme['c-primary-dark-100-alpha-200'],
@@ -274,7 +275,7 @@ const state: InitState = {
     'c-button-background-hover': theme['c-primary-light-300-alpha-600'],
     'c-button-background-active': theme['c-primary-light-100-alpha-600'],
     'c-list-header-border-bottom': theme['c-primary-alpha-900'],
-    'c-content-background': theme['c-primary-light-1000'],
+    'c-content-background': 'rgb(49,49,49)',
     'c-border-background': theme['c-primary-light-100-alpha-700'],
 
     'bg-image-position': 'center',
