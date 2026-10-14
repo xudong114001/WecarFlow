@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/xudong114001/WecarFlow"><img width="200" src="https://github.com/xudong114001/WecarFlow/blob/main/doc/images/icon.png" alt="lx-music logo"></a></p>
+<p align="center"><a href="https://github.com/xudong114001/WecarFlow"><img width="200" src="https://github.com/xudong114001/WecarFlow/blob/main/doc/images/icon.png" alt="wecarflow logo"></a></p>
 
 <h1 align="center">爱趣听移动版</h1>
 
@@ -6,10 +6,10 @@
   <a href="https://github.com/xudong114001/WecarFlow/releases"><img src="https://img.shields.io/github/release/xudong114001/WecarFlow" alt="Release version"></a>
   <a href="https://github.com/xudong114001/WecarFlow/actions/workflows/release.yml"><img src="https://github.com/xudong114001/WecarFlow/workflows/Build/badge.svg" alt="Build status"></a>
   <a href="https://github.com/xudong114001/WecarFlow/actions/workflows/beta-pack.yml"><img src="https://github.com/xudong114001/WecarFlow/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
-  <a href="https://github.com/facebook/react-native"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-mobile/react-native/master" alt="React native version"></a>
-  <!-- <a href="https://github.com/xudong114001/WecarFlow/releases"><img src="https://img.shields.io/github/downloads/lyswhut/lx-music-mobile/latest/total" alt="Downloads"></a> -->
-  <a href="https://github.com/xudong114001/WecarFlow/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-mobile/dev" alt="Dev branch version"></a>
-  <!-- <a href="https://github.com/xudong114001/WecarFlow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lyswhut/lx-music-mobile" alt="License"></a> -->
+  <a href="https://github.com/facebook/react-native"><img src="https://img.shields.io/github/package-json/dependency-version/xudong114001/WecarFlow/react-native/main" alt="React native version"></a>
+  <!-- <a href="https://github.com/xudong114001/WecarFlow/releases"><img src="https://img.shields.io/github/downloads/xudong114001/WecarFlow/latest/total" alt="Downloads"></a> -->
+  <a href="https://github.com/xudong114001/WecarFlow/tree/main"><img src="https://img.shields.io/github/package-json/v/xudong114001/WecarFlow/main" alt="Dev branch version"></a>
+  <!-- <a href="https://github.com/xudong114001/WecarFlow/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xudong114001/WecarFlow" alt="License"></a> -->
 </p>
 
 <p align="center">一个基于洛雪音乐开发的音乐软件</p>
@@ -27,13 +27,12 @@
 
 ***注：目前没有计划支持 iOS 和 HarmonyOS NEXT**。*<br>
 *桌面版项目地址：<https://github.com/lyswhut/lx-music-desktop>*<br>
-*爱趣听项目发展调整与新项目计划：https://github.com/lyswhut/lx-music-desktop/issues/1912*
 
-软件变化请查看[更新日志](https://github.com/xudong114001/WecarFlow/blob/master/CHANGELOG.md)。
+软件变化请查看[更新日志](https://github.com/xudong114001/WecarFlow/blob/main/CHANGELOG.md)。
 
 软件下载请查看 [GitHub Releases](https://github.com/xudong114001/WecarFlow/releases)。
 
-使用常见问题请参阅[移动版常见问题](https://lyswhut.github.io/lx-music-doc/mobile/faq)。
+使用常见问题请参阅[移动版常见问题](https://github.com/xudong114001/WecarFlow/blob/main/FAQ.md)。
 
 目前本项目的原始发布地址只有 [**GitHub**](https://github.com/xudong114001/WecarFlow/releases)，其他渠道均为第三方转载发布，与本项目无关！
 
@@ -54,17 +53,17 @@
 贡献代码步骤：
 
 1. 参照[源码使用方法](https://lyswhut.github.io/lx-music-doc/mobile/use-source-code)设置开发环境；
-2. 克隆本仓库代码并切换至 `dev` 分支进行开发；
-3. 提交 PR 至 `dev` 分支。
+2. 克隆本仓库代码并切换至 `main` 分支进行开发；
+3. 提交 PR 至 `main` 分支。
 
 <!--
 ## 用户界面
 
-<p><img width="100%" src="https://github.com/xudong114001/WecarFlow/blob/master/doc/images/app.png" alt="lx-music mobile UI"></p> -->
+<p><img width="100%" src="https://github.com/xudong114001/WecarFlow/blob/main/doc/images/app.png" alt="lx-music mobile UI"></p> -->
 
 ## 项目协议
 
-本项目基于 [Apache License 2.0](https://github.com/xudong114001/WecarFlow/blob/master/LICENSE) 许可证发行，以下协议是对于 Apache License 2.0 的补充，如有冲突，以以下协议为准。
+本项目基于 [Apache License 2.0](https://github.com/xudong114001/WecarFlow/blob/main/LICENSE) 许可证发行，以下协议是对于 Apache License 2.0 的补充，如有冲突，以以下协议为准。
 
 ---
 
@@ -114,4 +113,4 @@
 
 ---
 
-若对此有疑问请 mail to: lyswhut+qq.com (请将 `+` 替换成 `@`)
+若对此有疑问请到 [Issue 列表](https://github.com/xudong114001/WecarFlow/issues) 反馈。

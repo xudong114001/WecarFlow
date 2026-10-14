@@ -1,6 +1,6 @@
-# lx-music-mobile 常见问题
+# 腾讯爱趣听 常见问题
 
-本文档已迁移至：<https://lyswhut.github.io/lx-music-doc/mobile/faq>
+本项目是 [lx-music-mobile](https://github.com/lyswhut/lx-music-mobile) 的二次改版，以下常见问题摘自上游，其中涉及包名、更新渠道的条目可能与本版不同。
 
 <!-- 在阅读本常见问题后，仍然无法解决你的问题，请提交issue或者加企鹅群`830125506`反馈（无事勿加，入群先看群公告），反馈时请**注明**已阅读常见问题！
 
@@ -108,7 +108,7 @@
 
 ## 杀毒软件提示有病毒或恶意行为
 
-本人只能保证我写的代码不包含任何**恶意代码**、**收集用户信息**的行为，并且软件代码已开源，请自行查阅，软件安装包也是由CI拉取源代码构建，构建日志：[GitHub Actions](https://github.com/lyswhut/lx-music-mobile/actions)<br>
+本人只能保证我写的代码不包含任何**恶意代码**、**收集用户信息**的行为，并且软件代码已开源，请自行查阅，软件安装包也是由CI拉取源代码构建，构建日志：[GitHub Actions](https://github.com/xudong114001/WecarFlow/actions)<br>
 尽管如此，但这不意味着软件是100%安全的，由于软件使用了第三方依赖，当这些依赖存在恶意行为时（[供应链攻击](https://docs.microsoft.com/zh-cn/windows/security/threat-protection/intelligence/supply-chain-malware)），软件也将会受到牵连，所以我只能尽量选择使用较多人用、信任度较高的依赖。<br>
 当然，以上说明建立的前提是在你所用的安装包是从**本项目主页上写的链接**下载的，或者有相关能力者还可以下载源代码自己构建安装包。
 
