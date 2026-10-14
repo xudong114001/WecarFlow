@@ -6,6 +6,17 @@ Project versioning adheres to [Semantic Versioning](http://semver.org/).
 Commit convention is based on [Conventional Commits](http://conventionalcommits.org).
 Change log format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.9.3](https://github.com/xudong114001/WecarFlow/compare/v1.9.2...v1.9.3) - 2026-10-14
+
+### 变更
+
+- 默认主题改为「黑灯瞎火」（深色）
+- 默认关闭「启用音频卸载」，规避部分车机音频加载出错
+
+### 修复
+
+- 兜底主题与原生窗口背景仍为纯白，导致冷启动会先白一下再切深色，统一改为深色同色号
+
 ## [1.9.2](https://github.com/xudong114001/WecarFlow/compare/v1.9.1...v1.9.2) - 2026-10-14
 
 ### 新增
